@@ -127,3 +127,9 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 20px;
+  }
+}

@@ -133,3 +133,36 @@ footer {
     margin: 30px 20px;
   }
 }
+
+.preview-container {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-box {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 350px;
+  border: 1px solid #ddd;
+  background: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+
+  z-index: 100;
+}
+
+.preview-box img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Show on hover */
+.preview-container:hover .preview-box {
+  opacity: 1;
+  visibility: visible;
+}
